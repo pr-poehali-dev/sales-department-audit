@@ -10,10 +10,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-montserrat font-bold text-gray-900 mb-4">
-            Получить консультацию
+            Бесплатная консультация
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Обсудим ваши задачи и предложим решение в течение 24 часов
+            Обсудим задачи вашего отдела продаж и предложим решение за 30 минут
           </p>
         </div>
 
@@ -21,7 +21,7 @@ const Contact = () => {
           <Card className="hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
               <CardTitle className="text-2xl font-montserrat">
-                Отправить заявку
+                Заказать консультацию
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -40,30 +40,36 @@ const Contact = () => {
                 className="border-blue-200 focus:border-primary"
               />
               <Input
-                placeholder="Название компании"
+                placeholder="Компания и должность"
                 className="border-blue-200 focus:border-primary"
               />
               <Textarea
-                placeholder="Расскажите о ваших задачах и целях"
+                placeholder="Опишите текущие проблемы с продажами: низкая конверсия, высокая текучка, отсутствие системности..."
                 className="min-h-32 border-blue-200 focus:border-primary"
               />
 
               <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                <Icon name="Info" className="text-primary mt-1" size={20} />
+                <Icon
+                  name="CheckCircle"
+                  className="text-primary mt-1"
+                  size={20}
+                />
                 <div className="text-sm text-gray-700">
-                  <p className="font-medium mb-1">Что вы получите:</p>
+                  <p className="font-medium mb-1">
+                    Что получите на консультации:
+                  </p>
                   <ul className="space-y-1">
-                    <li>• Анализ текущей ситуации</li>
-                    <li>• Рекомендации по улучшению</li>
-                    <li>• План внедрения решений</li>
-                    <li>• Расчет ROI от оптимизации</li>
+                    <li>• Диагностика текущих проблем продаж</li>
+                    <li>• Рекомендации по быстрым улучшениям</li>
+                    <li>• План создания/развития отдела продаж</li>
+                    <li>• Расчет потенциального роста выручки</li>
                   </ul>
                 </div>
               </div>
 
               <Button className="w-full bg-primary hover:bg-primary/90 text-white py-3">
-                <Icon name="Send" className="mr-2" size={20} />
-                Отправить заявку
+                <Icon name="Calendar" className="mr-2" size={20} />
+                Записаться на консультацию
               </Button>
             </CardContent>
           </Card>
@@ -76,7 +82,9 @@ const Contact = () => {
                     <Icon name="Phone" className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Телефон</h3>
+                    <h3 className="font-semibold text-gray-900">
+                      Горячая линия
+                    </h3>
                     <p className="text-gray-600">+7 (495) 123-45-67</p>
                   </div>
                 </div>
@@ -91,7 +99,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">info@salesprofi.ru</p>
+                    <p className="text-gray-600">audit@salesexperts.ru</p>
                   </div>
                 </div>
               </CardContent>
@@ -101,11 +109,15 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Icon name="MapPin" className="text-primary" size={24} />
+                    <Icon
+                      name="MessageCircle"
+                      className="text-primary"
+                      size={24}
+                    />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Офис</h3>
-                    <p className="text-gray-600">Москва, ул. Тверская, 15с1</p>
+                    <h3 className="font-semibold text-gray-900">Telegram</h3>
+                    <p className="text-gray-600">@salesaudit_bot</p>
                   </div>
                 </div>
               </CardContent>
@@ -114,9 +126,9 @@ const Contact = () => {
             <Card className="bg-primary text-white">
               <CardContent className="p-6 text-center">
                 <Icon name="Clock" className="mx-auto mb-3" size={32} />
-                <h3 className="font-semibold mb-2">Режим работы</h3>
-                <p className="text-blue-100">Пн-Пт: 9:00 — 19:00</p>
-                <p className="text-blue-100">Сб-Вс: по договоренности</p>
+                <h3 className="font-semibold mb-2">Работаем 24/7</h3>
+                <p className="text-blue-100">Консультации в любое время</p>
+                <p className="text-blue-100">Экстренная помощь отделу продаж</p>
               </CardContent>
             </Card>
           </div>
